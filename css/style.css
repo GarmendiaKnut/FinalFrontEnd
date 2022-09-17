@@ -1,0 +1,616 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400&display=swap');
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    position: relative;
+}
+
+/* header&nav */
+
+header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 200px;
+    margin: 20px;
+}
+
+header button {
+    margin-right: 8rem;
+}
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+
+nav i {
+    visibility: hidden;
+}
+
+nav a {
+    color: #242E52;
+    text-decoration: none;
+}
+
+button {
+    display: inline-flex;
+    background-color: #8B48BF;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    color: white;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: none;
+}
+
+/* mediaq del header&nav */
+
+@media (max-width:480px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    header img {
+        display: block;
+        width: 200px;
+        margin-bottom: 0px;
+    }
+
+    header button {
+        visibility: hidden;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    nav i {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        visibility: visible;
+        font-size: 2rem;
+    }
+
+    nav a {
+        visibility: hidden;
+    }
+
+    .grey i {
+        visibility: hidden;
+    }
+}
+
+/* container 1 */
+
+.container1 {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.container1 h1 {
+    font-size: 4rem;
+    color: #232C50;
+    margin-bottom: 1rem;
+}
+
+.container1 p {
+    font-size: 1rem;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.graficos img {
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 1rem;
+}
+
+.text1 {
+    width: 40rem;
+}
+
+/* mediaq del container 1 */
+
+@media (max-width:480px) {
+    .contenedor1 {
+        margin-top: 0px;
+        justify-content: center;
+    }
+
+    .contenedor1 h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .contenedor1 p {
+        text-align: center;
+        margin-left: 15%;
+    }
+
+    .graficos img {
+        margin-bottom: 100px;
+
+    }
+
+    .tex1 {
+        margin-bottom: 100px;
+        order: 2;
+    }
+
+    .tex1 p {
+        width: 80%;
+        margin: 0px 40px 0px 40px;
+    }
+
+    .btc1 {
+        margin-left: 32%;
+    }
+}
+
+/* container 2 */
+
+.container2 {
+    width: 100%;
+    justify-content: space-around;
+    display: inline-flex;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.text2 {
+    display: inline-block;
+    width: 30rem;
+}
+
+.text2 h2 {
+    font-size: 4rem;
+    color: #232851;
+}
+
+.text2 p {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.list {
+    position: relative;
+    display: inline-block;
+    width: 30rem;
+}
+
+.list p {
+    padding: 5px;
+    text-align: left;
+    display: inline-block;
+    color: #B3B2B7;
+    margin-left: 8rem;
+}
+
+.listtext {
+    display: inline-block;
+}
+
+.listtext button {
+    width: 90px;
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+}
+
+.listtext h3 {
+    display: inline-block;
+}
+
+/* mediaq del container 2 */
+
+@media (max-width:480px) {
+    .container2 {
+        width: 100%;
+        justify-content: space-around;
+        display: inline-flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .text2 {
+        display: inline-block;
+        width: 30rem;
+        padding: 15px;
+        margin-bottom: 100px;
+    }
+
+    .text2 h2 {
+        font-size: 2rem;
+        color: #232851;
+    }
+
+    .text2 p {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .list {
+        margin-left: 20px;
+        margin-bottom: 100px;
+
+    }
+
+    .listtext {
+        position: relative;
+        display: block;
+        text-align: center;
+
+    }
+
+    .listtext button {
+        width: 90px;
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        height: 40px;
+    }
+
+    .listtext h3 {
+        background-color: #8B48BF4D;
+        display: inline-block;
+        width: 90%;
+        height: 40px;
+        font-size: 1rem;
+        margin-right: -44px;
+        align-items: center;
+        padding-left: 60px;
+        padding-top: 10px;
+        text-align: justify;
+    }
+
+    .listtext p {
+        margin-left: 0px;
+        font-size: 0.9rem;
+        margin: 20px 6px;
+        line-height: 25px;
+    }
+
+    .container3 {
+        width: 100%;
+        justify-content: space-around;
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+
+    .container3 h2 {
+        width: 100%;
+        text-align: center;
+        color: #242E53;
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+}
+
+/* container 3 */
+
+.container3 {
+    width: 100%;
+    justify-content: space-around;
+    display: inline-flex;
+    gap: 1rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.container3 h2 {
+    width: 100%;
+    text-align: center;
+    color: #242E53;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    position: relative;
+    display: inline-block;
+    width: 25rem;
+    text-align: center;
+}
+
+.card img {
+    width: 6rem;
+    position: absolute;
+    top: -50px;
+    right: 37%;
+}
+
+.card h2 {
+    color: #3F4868;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding: 20px;
+    color: #B3B2B7;
+}
+
+.btn-down {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    border: none;
+}
+
+/* mediaq del container 3 */
+
+@media (max-width: 480px) {
+    .container3 {
+        position: relative;
+        height: 450px;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+        position: absolute;
+        top: 130px;
+    }
+
+    .btn-down {
+        position: absolute;
+        bottom: -15px;
+    }
+}
+
+/* container 4 */
+
+.container4 {
+    background-color: #8B48BF;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.container4 h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+    width: 50%;
+    margin: 50px
+}
+
+.container4 button {
+    width: 150px;
+    background-color: white;
+    opacity: 100%;
+    color: #8B48BF;
+    margin: 50px;
+    border: none;
+}
+
+/* mediaq del container 4 */
+
+@media (max-width:480px) {
+    .container4 {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container4 h2 {
+        width: 350px;
+        display: flex;
+        margin-left: 7%;
+    }
+
+    .container4 button {
+        display: flex;
+        margin-left: 30%;
+    }
+}
+
+/* footer networks&CopyR */
+
+footer {
+    display: inline-flex;
+    width: 100%;
+    height: 20%;
+    background-color: #1E1E26;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.networks {
+    margin: 20px;
+    width: 280px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.networks a {
+    display: inline-flex;
+    width: 2rem;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 40px;
+}
+
+.networks .logo {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.menu {
+    display: flex;
+    width: 40%;
+    display: block;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.navfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navfooter a {
+    text-align: center;
+    width: 11rem;
+    color: white;
+}
+
+.update {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    width: 350px;
+    flex-wrap: wrap;
+}
+
+.update input {
+    width: 200px;
+    border-radius: 30px;
+    height: 40px;
+}
+
+.update input::placeholder {
+    color: #232851;
+    font-style: italic;
+}
+
+.update button {
+    color: #f3f3f3;
+    width: 90px;
+    margin-left: 1rem;
+    border: none;
+}
+
+.copyr {
+    margin-top: 30px;
+    text-align: end;
+    font-size: 0.8rem;
+    color: #8C8C94;
+    display: block;
+    width: 98%;
+}
+
+/* mediaq del footer */
+
+@media (max-width:480px) {
+    footer {
+        width: 100%;
+        background-color: #1E1E26;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+    }
+
+    .networks {
+        order: 3;
+        width: 80%;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .networks img {
+        margin: 2px 16px;
+        width: 25px;
+    }
+
+    .networks .logo {
+        width: 190px;
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        right: 30%;
+    }
+
+    .menu {
+        order: 2;
+        display: block;
+        width: 80%;
+    }
+
+    .navfooter {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: left;
+    }
+
+    .navfooter a {
+        font-size: 0.89em;
+        width: 44%;
+        visibility: visible;
+        color: white;
+    }
+
+    .navfooter :hover {
+        color: #3F4868;
+    }
+
+    .update {
+        margin-top: 30px;
+        width: 80%;
+        order: 1;
+    }
+
+    .update input {
+        margin: 10px;
+        border-radius: 30px;
+        width: 12rem;
+        padding-left: 6px;
+    }
+
+    .update button {
+        color: white;
+        width: 4rem;
+        margin: 10px;
+    }
+
+    .copy {
+        position: absolute;
+        bottom: 1px;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
